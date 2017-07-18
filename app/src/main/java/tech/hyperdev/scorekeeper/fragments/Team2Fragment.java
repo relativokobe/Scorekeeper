@@ -43,7 +43,6 @@ public class Team2Fragment extends Fragment {
             scoreText = savedInstanceState.getInt("team2score",0);
             score.setText(scoreText+"");
         }
-/*
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +57,7 @@ public class Team2Fragment extends Fragment {
                 scoreText--;
                 score.setText(scoreText+"");
             }
-        });*/
+        });
 
 
 

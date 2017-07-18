@@ -37,7 +37,6 @@ public class Team1Fragment extends Fragment {
         minus = (ImageButton)view.findViewById(R.id.btnMinus);
         score = (TextView)view.findViewById(R.id.team1Score);
 
-/*
 
         if(savedInstanceState!=null){
             scoreText = savedInstanceState.getInt("team1score",0);
@@ -59,7 +58,6 @@ public class Team1Fragment extends Fragment {
                 score.setText(scoreText+"");
             }
         });
-*/
 
 
         return view;
