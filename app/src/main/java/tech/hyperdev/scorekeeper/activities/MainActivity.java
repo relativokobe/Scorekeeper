@@ -16,17 +16,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        final FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.team1,new Team1Fragment())
-                .addToBackStack("team1")
-                .commit();
 
-        fragmentManager.beginTransaction()
-                .replace(R.id.team2,new Team2Fragment())
-                 .addToBackStack("team2")
-                .commit();
+        if(savedInstanceState == null) {
 
+            final FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.team1, new Team1Fragment())
+                    .addToBackStack("team1")
+                    .commit();
+
+            fragmentManager.beginTransaction()
+                    .replace(R.id.team2, new Team2Fragment())
+                    .addToBackStack("team2")
+                    .commit();
+
+        }
 
     }
 }

@@ -16,6 +16,7 @@
     android:id="@+id/team1">
 
 </FrameLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_weight="1"
